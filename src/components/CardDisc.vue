@@ -31,13 +31,14 @@ export default {
 .container-card {
   background-color: #2e3a46;
   color: white;
-  height: 18rem;
+  height: 17.5rem;
 }
 h2 {
   font-size: 1rem;
 }
 .author {
   color: gray;
+  font-size: 1rem;
 }
 .anno {
   color: gray;

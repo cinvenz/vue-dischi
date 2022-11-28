@@ -1,6 +1,6 @@
 <template>
-  <div class="conyainer-cards py-5">
-    <div v-if="arrDisc" class="row row-cols-5 g-4">
+  <div class="container-main">
+    <div v-if="arrDisc" class="row row-cols-5 g-4 container-cards py-5">
       <CardDisc
         v-for="disc in arrDisc"
         :key="disc.title"
@@ -40,7 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.conyainer-cards {
+.container-main {
+  background-color: #1e2d3b;
+}
+.container-cards {
   max-width: 900px;
   display: flex;
   margin: auto;
