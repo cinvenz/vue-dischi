@@ -1,12 +1,12 @@
 <template>
-  <div class="container py-5">
-    <div v-if="arrDisc" class="row row-cols-5 g-5">
+  <div class="conyainer-cards py-5">
+    <div v-if="arrDisc" class="row row-cols-5 g-4">
       <CardDisc
         v-for="disc in arrDisc"
         :key="disc.title"
         :img-url="disc.poster"
         :name="disc.title"
-        :genre="disc.genre"
+        :author="disc.author"
         :anno="disc.year"
       />
     </div>
@@ -39,4 +39,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.conyainer-cards {
+  max-width: 900px;
+  display: flex;
+  margin: auto;
+}
+</style>

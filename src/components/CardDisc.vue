@@ -1,14 +1,14 @@
 <template>
   <div class="col">
-    <div class="contents text-center">
+    <div class="contents text-center container-card p-3">
       <img :src="imgUrl" :alt="name" class="img-fluid" />
-      <h3 class="name">
+      <h2 class="name fw-bold text-uppercase pt-3 pb-2">
         {{ name }}
-      </h3>
-      <div class="origin">
-        {{ genre }}
+      </h2>
+      <div class="author">
+        {{ author }}
       </div>
-      <div class="species">
+      <div class="anno">
         {{ anno }}
       </div>
     </div>
@@ -21,10 +21,25 @@ export default {
   props: {
     imgUrl: String,
     name: String,
-    genre: String,
+    author: String,
     anno: Number,
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container-card {
+  background-color: #2e3a46;
+  color: white;
+  height: 18rem;
+}
+h2 {
+  font-size: 1rem;
+}
+.author {
+  color: gray;
+}
+.anno {
+  color: gray;
+}
+</style>

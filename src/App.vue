@@ -26,5 +26,6 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 body {
   font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
 }
 </style>
