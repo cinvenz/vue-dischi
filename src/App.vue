@@ -6,11 +6,11 @@
 </template>
 
 <script>
-// TODO: import bootstrap script
 import PageHeader from "@/components/PageHeader.vue";
 import PageMain from "@/components/PageMain.vue";
 
 export default {
+  name: "App",
   components: {
     PageHeader,
     PageMain,

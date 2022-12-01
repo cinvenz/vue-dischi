@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "CardDisc",
+  name: "CardMovie",
   props: {
     movieInfo: Object,
   },

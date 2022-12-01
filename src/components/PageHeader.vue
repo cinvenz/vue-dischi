@@ -1,16 +1,14 @@
 <template>
-  <div class="container-header py-2 ps-3">
-    <img class="img-fluid" src="../../public/logo-small.svg" alt="" />
-
+  <header>
     <label for="select-genres">
       <select id="select-genres" v-model="genreFilter" name="genre" @change="genreChange">
-        <option value="all">all genres</option>
-        <option v-for="genre in genresList" :key="genre" value="genre">
+        <option value="all">All genres</option>
+        <option v-for="genre in genresList" :key="genre" :value="genre">
           {{ genre }}
         </option>
       </select>
     </label>
-  </div>
+  </header>
 </template>
 
 <script>
