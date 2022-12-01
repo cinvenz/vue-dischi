@@ -1,15 +1,15 @@
 <template>
   <div class="col">
-    <div class="contents text-center container-card p-3">
-      <img :src="imgUrl" :alt="name" class="img-fluid" />
+    <div class="contents text-center container-card p-3 mb-1">
+      <img :src="movieInfo.poster" :alt="movieInfo.title" class="img-fluid" />
       <h2 class="name fw-bold text-uppercase pt-3 pb-2">
-        {{ name }}
+        {{ movieInfo.title }}
       </h2>
       <div class="author">
-        {{ author }}
+        {{ movieInfo.author }}
       </div>
       <div class="anno">
-        {{ anno }}
+        {{ movieInfo.year }}
       </div>
     </div>
   </div>
@@ -19,10 +19,7 @@
 export default {
   name: "CardDisc",
   props: {
-    imgUrl: String,
-    name: String,
-    author: String,
-    anno: Number,
+    movieInfo: Object,
   },
 };
 </script>
